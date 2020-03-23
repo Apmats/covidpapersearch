@@ -13,6 +13,7 @@ def search(es, query):
 
     }},
         "highlight": {
+            "pre_tags": ["<b>"], "post_tags": ["</b>"],
             "fields": {
                 "fulltext": {},
                 "abstract": {},
